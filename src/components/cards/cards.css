@@ -1,0 +1,238 @@
+/* Start of gridCards CSS */
+
+.userList {
+  display: flex;
+  justify-content: center;
+}
+
+.cardList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cards {
+  position: relative;
+  height: 342px;
+  width: 210px;
+  background: linear-gradient(to right, rgba(167, 184, 168, 1) 50%, white 50%);
+  border-radius: 20px;
+  margin: 2rem;
+}
+
+.upperCard {
+  height: 50%;
+  background-color: rgba(167, 184, 168, 1);
+  border-bottom-right-radius: 30%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.bottomCard {
+  height: 50%;
+  background: white;
+  border-top-left-radius: 30%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: grid;
+  align-items: flex-end;
+}
+
+.cards h4 {
+  padding-top: 20px;
+}
+
+.bottomCard .icons svg {
+  font-size: 24px;
+}
+
+.summer-green {
+  background-color: rgba(167, 184, 168, 1);
+  height: 50%;
+  border-bottom-right-radius: 100%;
+}
+
+.desert-sand {
+  background: rgba(232, 205, 173, 1);
+  height: 50%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.oyster-pink {
+  background: rgba(225, 211, 199, 1);
+  height: 50%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.profile-picture img {
+  border-radius: 50%;
+}
+
+.cards svg {
+  margin: 0.5rem;
+  font-size: 18px;
+}
+
+/* End of gridCards CSS */
+
+/* Start of mobile grid screen CSS */
+
+@media only screen and (min-width: 768px) {
+  .profile-pic-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 40%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cardList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .cards {
+    position: relative;
+    height: 220px;
+    width: 135.09px;
+    background: linear-gradient(
+      to right,
+      rgba(167, 184, 168, 1) 50%,
+      white 50%
+    );
+    border-radius: 20px;
+    margin: 2rem;
+  }
+  .profile-pic-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+  }
+}
+
+/* End of mobile grid screen CSS */
+
+/* Start of listCards CSS */
+
+.listGrid-cardList {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.listGrid-cards {
+  position: relative;
+  height: 100px;
+  width: 749px;
+  background: linear-gradient(to right, rgba(167, 184, 168, 1) 50%, white 50%);
+  border-radius: 20px;
+  margin: 2rem;
+  display: flex;
+}
+
+.listGrid-leftCard {
+  height: 100%;
+  width: 20%;
+  background-color: rgba(167, 184, 168, 1);
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.listGrid-rightCard {
+  background: white;
+  width: 100%;
+  border-top-left-radius: 42px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.listGrid-rightCard h4 {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.listGrid-rightCard p {
+  display: flex;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.listGrid-rightCard h4,
+.listGrid-rightCard p {
+  padding-left: 40px;
+}
+
+.listGrid-rightCard .icons svg {
+  font-size: 24px;
+}
+
+.listGrid-profile-picture img {
+  border-radius: 50%;
+}
+
+.listGrid-cards svg {
+  margin: 0.5rem;
+  font-size: 18px;
+}
+
+/* End of listCards CSS */
+
+/* Start of mobile list screen CSS */
+
+@media only screen and (max-width: 768px) {
+  .listGrid-cards {
+    position: relative;
+    height: 100px;
+    width: 80vw;
+    background: linear-gradient(to right, rgba(167, 184, 168, 1) 50%, white 50%);
+    border-radius: 20px;
+    margin: 2rem;
+    display: flex;
+  }
+  .listGrid-rightCard h4,
+  .listGrid-rightCard p {
+    padding-left: 0px;
+  }
+}
+
+/* End of mobile list screen CSS */
+
+/* Start of loading icon */
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  width: 100px;
+  height: 100px;
+  border: 10px solid #f3f3f3; /* Light grey */
+  border-top: 10px solid #383636; /* Blue */
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
+
+.spinner-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
+
+/* End of loading icon */

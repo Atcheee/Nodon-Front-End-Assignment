@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+.searchBar h1 {
+  font-family: Work Sans;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.searchInput {
+  margin-top: 105px;
+  display: flex;
+  flex-direction: row;
+}
+
+.header input {
+  background: transparent;
+  border: 0;
+  border-radius: 2px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  font-size: 18px;
+  padding: 15px;
+  height: 30px;
+  width: 313.31px;
+  border-bottom: 2px solid black;
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
+}
+
+.menu-grid-icon {
+  display: flex;
+  justify-content: flex-end;
+}
+
+svg {
+  font-size: 35px;
+}
+
+@media only screen and (max-width: 768px) {
+  svg {
+    font-size: 24px;
+  }
+  .header {
+    width: 100vw;
+  }
+  .header input {
+    width: 70vw;
+  }
+}

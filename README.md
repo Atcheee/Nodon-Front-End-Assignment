@@ -10,4 +10,10 @@ Opens the application on port 3000 in your web browser automatically.
 
 If it doesn't open automatically; open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Enjoy the application :D
+## 2,5. Some other commands you can run are: 
+
+### `npm build`
+### `npm test`
+### `npm eject`
+
+## 3. Enjoy the application :D

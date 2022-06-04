@@ -1,7 +1,7 @@
 import React from "react";
 import GridCards from "./gridCards";
 import ListCards from "./listCards";
-import useFetch from "./fetch";
+import useFetch from "../data/fetch";
 import "./cards.css";
 
 function Cards({ view, searchTerm, sort }) {

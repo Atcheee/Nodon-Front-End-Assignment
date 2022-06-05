@@ -123,21 +123,29 @@
   position: relative;
   height: 100px;
   width: 749px;
-  background: linear-gradient(to right, rgba(167, 184, 168, 1) 50%, white 50%);
+  background-color: rgba(167, 184, 168, 1);
   border-radius: 20px;
   margin: 2rem;
   display: flex;
 }
 
 .listGrid-leftCard {
-  height: 100%;
-  width: 20%;
-  background-color: rgba(167, 184, 168, 1);
+  width: 12%;
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+
+.profile-pictures {
+  position: absolute;
+  padding-left: 40px;
+  padding-top: 2%;
+}
+
+.profile-pictures img {
+  border-radius: 50%;
 }
 
 .listGrid-rightCard {
@@ -201,9 +209,9 @@
     margin: 2rem;
     display: flex;
   }
-  .listGrid-rightCard h4,
-  .listGrid-rightCard p {
-    padding-left: 0px;
+  .profile-pictures {
+    padding-left: 20px;
+    padding-top: 2.5%;
   }
 }
 

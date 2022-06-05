@@ -27,17 +27,18 @@ const ListCards = ({ users, searchTerm, sort, userData }) => {
             >
               <div className="listGrid-leftCard">
                 <div className="listGrid-profile-pic-container">
-                  <div className="listGrid-profile-picture">
-                    <img
-                      src={
-                        sort !== true && sort !== false
-                          ? users.picture.medium
-                          : userData[arrNumber].picture.medium
-                      }
-                      alt="User Profile Pic"
-                    />
-                  </div>
+                  <div className="listGrid-profile-picture"></div>
                 </div>
+              </div>
+              <div className="profile-pictures">
+                <img
+                  src={
+                    sort !== true && sort !== false
+                      ? users.picture.medium
+                      : userData[arrNumber].picture.medium
+                  }
+                  alt="User Profile Pic"
+                />
               </div>
               <div className="listGrid-rightCard">
                 <div>
